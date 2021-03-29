@@ -20,7 +20,7 @@ class VigenereCipheringMachine {
     }
   }
     encrypt(message, key) {
-      if (typeof message === 'undefined' || typeof key === 'undefined') {
+      if (typeof message === undefined || typeof key === undefined) {
         throw new CustomError('Error');
       }
       let gamma = [];
@@ -56,7 +56,7 @@ class VigenereCipheringMachine {
     }
   }
   decrypt(encryptedMessage, key) {
-    if (typeof encryptedMessage === 'undefined' || typeof key === 'undefined') {
+    if (typeof encryptedMessage === undefined || typeof key === undefined) {
       throw new CustomError('Error');
       }
     let gamma = [];
